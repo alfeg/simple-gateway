@@ -22,9 +22,10 @@ namespace Alfeg.SimpleGateway
     {
         static void Main(string[] args)
         {
-            if (File.Exists("gateway.json"))
+            var file = args.Length > 0 ? args[0] : "gateway.json";
+            if (File.Exists(file))
             {
-                var map = JsonConvert.DeserializeObject<ApiMap[]>(File.ReadAllText("gateway.json"));
+                var map = JsonConvert.DeserializeObject<ApiMap[]>(File.ReadAllText(file));
                 CreateWebHostBuilder(map).Build().Run();
             }
             else

@@ -2,14 +2,15 @@
 
   <PropertyGroup>
     <ToolCommandName>simple-gateway</ToolCommandName>
-    <PackAsTool>True</PackAsTool>
+    <PackAsTool>False</PackAsTool>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <Authors>Victor Hladkikh</Authors>
     <Description>Simple gateway binded to HTTP.sys lib</Description>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <RootNamespace>Alfeg.SimpleGateway</RootNamespace>
     <StartupObject>Alfeg.SimpleGateway.Program</StartupObject>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
