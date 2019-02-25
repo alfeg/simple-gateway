@@ -1,0 +1,6 @@
+[
+  {
+    "bind": "http://localhost/metrics/wmi",
+    "target": "http://localhost:9999"
+  }
+]
